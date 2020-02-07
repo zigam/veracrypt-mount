@@ -4,7 +4,7 @@ VC="/Applications/VeraCrypt.app/Contents/MacOS/VeraCrypt"
 VOLUME="/Volumes/ziga-secure"
 
 unmount_volume() {
-    while test -d $VOLUME; do echo "Volume mounted"; sleep 5; done
+    while test -d $VOLUME; do sleep 5; done
     sleep 1
     $VC --dismount
 }
